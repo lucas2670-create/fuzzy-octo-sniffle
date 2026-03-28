@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observatorio Económico 2026 | Crisis y Amenazas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0f172a',
+                        darker: '#020617',
+                        danger: '#ef4444',
+                        warning: '#f59e0b',
+                        tech: '#0ea5e9'
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(100%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ocultar barra de desplazamiento para el ticker */
+        .ticker-container::-webkit-scrollbar {
+            display: none;
+        }
+        .ticker-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-darker text-slate-300 font-sans antialiased selection:bg-tech selection:text-white">
+
+    <!-- Ticker de Noticias Financieras 2026 -->
+    <div class="bg-black border-b border-slate-800 text-sm py-2 overflow-hidden relative flex items-center h-10">
+        <div class="absolute left-0 z-10 bg-black px-4 font-bold text-danger border-r border-slate-800 h-full flex items-center">
+            ÚLTIMA HORA
+        </div>
+        <div class="w-full overflow-hidden ticker-container ml-32">
+            <div class="whitespace-nowrap animate-marquee flex gap-8 items-center text-slate-400">
+                <span>🔴 Índice de Desempleo Algorítmico alcanza el 18% global</span>
+                <span>📈 BTC/USD: $145,230.00 (+2.4%)</span>
+                <span>⚠️ FMI advierte sobre inflación por costo de energía y computación</span>
+                <span>🚨 Nuevo ataque de IA Agéntica drena $40M de fondo de pensiones</span>
+                <span>🏛️ Euro Digital (CBDC) implementa fechas de caducidad en fondos de estímulo</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="bg-dark/80 backdrop-blur-md sticky top-0 z-40 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-tech" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="font-bold text-xl text-white tracking-tight">Econo<span class="text-tech">Shield</span> '26</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#macroeconomia" class="hover:text-white hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition">Crisis Macroeconómica</a>
+                        <a href="#fraude" class="hover:text-white hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition">Ciber-Fraude</a>
+                        <a href="#proteccion" class="bg-tech/10 text-tech hover:bg-tech/20 px-3 py-2 rounded-md text-sm font-medium border border-tech/30 transition">Guía de Supervivencia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden py-16 sm:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-danger/10 border border-danger/20 text-danger text-sm font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-danger animate-pulse"></span>
+                Nivel de Amenaza Global: CRÍTICO
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+                El Colapso del Dinero Tradicional <br class="hidden md:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-tech to-emerald-400">en la Era de la IA</span>
+            </h1>
+            <p class="mt-4 max-w-2xl text-lg md:text-xl text-slate-400 mx-auto">
+                2026 marca el punto de no retorno. La automatización del trabajo de cuello blanco y la industrialización del fraude financiero han creado la tormenta económica perfecta.
+            </p>
+        </div>
+        
+        <!-- Background Gradients -->
+        <div class="absolute top-0 w-full h-full overflow-hidden -z-10 flex justify-center items-center opacity-20 pointer-events-none">
+            <div class="w-96 h-96 bg-tech rounded-full blur-[128px] mix-blend-screen absolute -left-20 top-20"></div>
+            <div class="w-96 h-96 bg-danger rounded-full blur-[128px] mix-blend-screen absolute -right-20 top-40"></div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Sección 1: Problemas Macroeconómicos -->
+        <section id="macroeconomia" class="scroll-mt-24">
+            <div class="mb-10">
+                <h2 class="text-3xl font-bold text-white border-l-4 border-warning pl-4">Crisis Macroeconómica Global 2026</h2>
+                <p class="mt-2 text-slate-400">Los fundamentos de la economía han cambiado drásticamente en los últimos 24 meses.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:-translate-y-1 hover:border-warning/50 transition duration-300">
+                    <div class="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mb-4 text-warning">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Desempleo Algorítmico Masivo</h3>
+                    <p class="text-sm text-slate-400 mb-4">La adopción de IA Agéntica ha desplazado el 35% de los trabajos administrativos, legales y de programación básica. Las clases medias enfrentan una crisis de ingresos sin precedentes, presionando a los gobiernos hacia la Renta Básica Universal (UBI).</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:-translate-y-1 hover:border-warning/50 transition duration-300">
+                    <div class="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mb-4 text-warning">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Control Financiero CBDC</h3>
+                    <p class="text-sm text-slate-400 mb-4">La obligatoriedad de las Monedas Digitales de Bancos Centrales (CBDCs) en 15 países ha creado "dinero programable". Los gobiernos ahora pueden dictar en qué puedes gastar tu dinero y establecer fechas de caducidad a tus ahorros.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:-translate-y-1 hover:border-warning/50 transition duration-300">
+                    <div class="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mb-4 text-warning">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Inflación del Costo Computacional</h3>
+                    <p class="text-sm text-slate-400 mb-4">El poder de procesamiento y la energía se han convertido en los nuevos "petróleo y oro". La inmensa demanda de energía de los centros de datos de IA ha disparado el costo de la electricidad comercial y residencial en un 200%.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Ciber-Fraude -->
+        <section id="fraude" class="scroll-mt-24 relative">
+            <div class="absolute inset-0 bg-danger/5 rounded-3xl -z-10 border border-danger/10"></div>
+            <div class="p-8 md:p-12">
+                <div class="mb-10">
+                    <h2 class="text-3xl font-bold text-white border-l-4 border-danger pl-4">Industrialización del Fraude (IA)</h2>
+                    <p class="mt-2 text-slate-400">El cibercrimen ya no es manual. Redes neuronales atacan cuentas 24/7 a escala global.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Amenaza 1 -->
+                    <div class="flex flex-col md:flex-row gap-6 bg-slate-900 rounded-xl p-6 border border-slate-800">
+                        <div class="flex-shrink-0 w-16 h-16 bg-danger/20 rounded-full flex items-center justify-center text-danger border border-danger/30">
+                            <span class="text-2xl font-bold">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                                Deepfakes de "Emergencia Familiar"
+                                <span class="bg-danger/20 text-danger text-xs px-2 py-1 rounded-full uppercase tracking-wider">Hiper-realista</span>
+                            </h3>
+                            <p class="mt-2 text-slate-400">Clonación de voz y video en tiempo real. Los bots usan fragmentos de redes sociales para llamarte con la voz exacta de un familiar (e incluso su rostro en videollamada), simulando un accidente y pidiendo criptomonedas para gastos médicos inmediatos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Amenaza 2 -->
+                    <div class="flex flex-col md:flex-row gap-6 bg-slate-900 rounded-xl p-6 border border-slate-800">
+                        <div class="flex-shrink-0 w-16 h-16 bg-danger/20 rounded-full flex items-center justify-center text-danger border border-danger/30">
+                            <span class="text-2xl font-bold">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                                IA Agéntica "Scam-Bots"
+                                <span class="bg-danger/20 text-danger text-xs px-2 py-1 rounded-full uppercase tracking-wider">Autónomo</span>
+                            </h3>
+                            <p class="mt-2 text-slate-400">Sistemas de IA que mantienen conversaciones fluidas durante semanas para ganarse tu confianza (Pig Butchering 2.0). Cierran la estafa convenciéndote de invertir en falsos "Contratos Inteligentes" que drenan tus billeteras (Wallet Drainers) sin intervención humana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Soluciones / Protocolo -->
+        <section id="proteccion" class="scroll-mt-24">
+            <div class="bg-gradient-to-br from-slate-800 to-dark border border-slate-700 rounded-3xl p-8 md:p-12 text-center shadow-2xl">
+                <h2 class="text-3xl font-bold text-white mb-6">Protocolo de Defensa Activa 2026</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto mb-10">Las contraseñas tradicionales y los códigos SMS son tecnología obsoleta. Para proteger tu patrimonio hoy, necesitas implementar el estándar de confianza cero (Zero Trust).</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                    <div class="bg-dark p-6 rounded-xl border border-slate-700">
+                        <h4 class="font-bold text-tech mb-2">1. Palabras de Seguridad Físicas</h4>
+                        <p class="text-sm text-slate-400">Acuerda con tu familia una "Palabra Clave" en persona. Si alguien te llama pidiendo dinero, exige la palabra. Si es un Deepfake, no la sabrá.</p>
+                    </div>
+                    <div class="bg-dark p-6 rounded-xl border border-slate-700">
+                        <h4 class="font-bold text-tech mb-2">2. Hardware Wallets (Cold Storage)</h4>
+                        <p class="text-sm text-slate-400">Mantén el 90% de tus activos digitales fuera de internet. Usa llaves físicas de hardware (ej. YubiKey) para toda autenticación crítica.</p>
+                    </div>
+                    <div class="bg-dark p-6 rounded-xl border border-slate-700">
+                        <h4 class="font-bold text-tech mb-2">3. Diversificación Soberana</h4>
+                        <p class="text-sm text-slate-400">No dependas de una sola moneda estatal (CBDC). Mantén reservas en Bitcoin, metales preciosos físicos y activos tangibles descentralizados.</p>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <button class="bg-tech hover:bg-tech/80 text-white font-bold py-3 px-8 rounded-full transition shadow-[0_0_15px_rgba(14,165,233,0.5)]">
+                        Descargar Manual de Supervivencia Financiera (PDF)
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 border-t border-slate-800 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-slate-500 text-sm">
+                &copy; 2026 Observatorio Económico Global. La información aquí presentada refleja estimaciones de riesgo a la fecha. No constituye asesoramiento financiero formal.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
